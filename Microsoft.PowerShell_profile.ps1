@@ -58,14 +58,8 @@ function proj {
 }
 
 function dogapp {
-    $projPath = "$env:USERPROFILE\Documents\Projects\nz_dog_shelter"
-    if (Test-Path $projPath) {
-        Set-Location $projPath
-        code .
-        flutter pub get
-    } else {
-        Write-Host "❌ Project folder not found." -ForegroundColor Red
-    }
+    Set-Location "D:\projects\nz_dog_shelter_app"
+    code .
 }
 
 # === Open GitHub Profile ===
